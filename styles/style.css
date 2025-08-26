@@ -1,0 +1,94 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.nav-left {
+  display: flex;
+  width: 195px;
+  height: 50px;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.navbar-logo-left {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.navbar-text-left {
+  width: 135.72px;
+  height: 44.69px;
+  color: #006747;
+  font-size: 2.8rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.nav-coin-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-heart-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-right {
+  margin-right: 100px;
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-heart {
+  background-color: cyan;
+  flex-direction: row;
+  width: 123px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 82px;
+  background: rgba(117, 226, 141, 0.404);
+}
+
+.nav-coin {
+  background-color: cyan;
+  flex-direction: row;
+  width: 123px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 82px;
+  background: rgba(117, 226, 141, 0.404);
+}
+.nav-copy-indicator {
+  background-color: cyan;
+  flex-direction: row;
+  width: 123px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 82px;
+  background: #00a63e;
+  color: white;
+}
+
+.nav-heart,
+.nav-coin,
+.nav-copy-indicator {
+  gap: 10px;
+}
