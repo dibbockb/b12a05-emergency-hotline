@@ -1,3 +1,10 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -73,8 +80,7 @@
   border-radius: 82px;
   background: rgba(117, 226, 141, 0.404);
 }
-.nav-copy-indicator {
-  background-color: cyan;
+.nav-copy {
   flex-direction: row;
   width: 123px;
   height: 52px;
@@ -85,6 +91,13 @@
   border-radius: 82px;
   background: #00a63e;
   color: white;
+  font-weight: 400;
+  gap: 5px;
+}
+
+.nav-heart-value,
+.nav-coin-value {
+  font-weight: 800;
 }
 
 .nav-heart,
@@ -134,6 +147,16 @@
 
 /* ------------------------ */
 /* Card Section */
+.card-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  width: 100vw;
+  height: 1140px;
+  box-sizing: border-box;
+}
 
 .card {
   background-color: whitesmoke;
@@ -144,14 +167,12 @@
   padding: 15px 15px;
 }
 
-.card-gallery {
-  width: 436.67px;
-  height: 360px;
+.card-container-gallery {
+  width: 1370px;
+  height: 1140px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 48px;
-  /* margin-left: 58px; */
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .card-left-icon-container {
@@ -207,7 +228,7 @@
   font-weight: 400;
 }
 .card-number {
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-top: 30px;
 }
 
@@ -262,5 +283,58 @@
   border: none;
 }
 .card-call-btn:hover {
+  background-color: rgba(0, 120, 45, 1);
+}
+
+/* ----------------------------- */
+/* Call History Section */
+
+.call-history-container {
+  width: 400px;
+  height: 1170px;
+  background-color: whitesmoke;
+  margin-left: 0;
+  position: relative;
+  right: 0;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.call-history-nav {
+  width: 22rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.call-historyleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.call-history-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.call-history-title {
+  font-family: "Inter";
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.call-history-clearbtn {
+  width: 114px;
+  height: 52px;
+  background-color: #00a63e;
+  color: white;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  border: none;
+}
+.call-history-clearbtn:hover {
   background-color: rgba(0, 120, 45, 1);
 }
