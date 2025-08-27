@@ -13,7 +13,7 @@ heartIcons.forEach((icon) => {
 // Call_Function_Section
 const coinCountElement = document.querySelector(".nav-coin-value");
 const callButton = document.querySelectorAll(".card-call-btn");
-const callLogsContainer = document.querySelector(".call-history-container");
+const callLogsContainer = document.querySelector(".call-logs");
 
 callButton.forEach((btn) => {
   btn.addEventListener("click", function (event) {
@@ -44,7 +44,7 @@ callButton.forEach((btn) => {
       })}</div>
     `;
 
-    callLogsContainer.appendChild(callLogEntry);
+    callLogsContainer.prepend(callLogEntry);
     // console.log(coinCount);
     // console.log(callButton);
     // console.log(callName);
@@ -59,3 +59,19 @@ clearBtn.addEventListener("click", function () {
 });
 
 // copy section
+let copyBtn = document.getElementsByClassName("card-copy-btn");
+let copyCountElement = document.querySelector(".nav-copy-value");
+let copyCount = parseInt(copyCountElement.textContent) || 0;
+
+Array.from(copyBtn).forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const hotline = btn
+      .closest(".card")
+      .querySelector(".card-number").textContent;
+    navigator.clipboard.writeText(hotline).then(() => {
+      copyCount++;
+      copyCountElement.textContent = copyCount;
+      alert(`Copied: ${hotline} and increased copy count to ${copyCount}`);
+    });
+  });
+});

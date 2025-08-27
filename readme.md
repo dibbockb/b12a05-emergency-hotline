@@ -1,6 +1,6 @@
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-all can be used in javascript to mark and change HTML elements. getElementById is used to touch html element by its id name. getElementsByClassName is used to touch html element class name. queryselector selects the first match based on given css selector. querySelectorAll selects all matches but return a collection.
+all can be used in javascript to mark and change HTML elements. getElementById is used to touch html element by its id name. getElementsByClassName is used to generate html list by class name. queryselector selects the first match based on given css selector. querySelectorAll selects all matches but return a collection.
 
 2. How do you create and insert a new element into the DOM?
 
