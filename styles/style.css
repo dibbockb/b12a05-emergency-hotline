@@ -310,6 +310,7 @@ html {
   align-items: center;
   gap: 15px;
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .call-nav-left {
@@ -339,6 +340,8 @@ html {
   font-size: 1.1rem;
   border: none;
   margin-right: -50px;
+  font-family: Inter;
+  font-weight: 400;
 }
 .call-history-clearbtn:hover {
   background-color: rgba(0, 120, 45, 1);
@@ -358,7 +361,7 @@ html {
   align-items: center;
   width: 100%;
   padding: 30px 40px;
-  margin-top: 15px;
+  margin-top: -25px;
 }
 
 .log-name {
