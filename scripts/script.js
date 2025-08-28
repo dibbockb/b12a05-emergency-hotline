@@ -4,9 +4,17 @@ const heartIcons = document.querySelectorAll(".card-heart-icon");
 
 heartIcons.forEach((icon) => {
   icon.addEventListener("click", function () {
-    let currentheartCount = parseInt(heartCount.innerText);
-    let newheartCount = currentheartCount + 1;
-    heartCount.innerText = newheartCount;
+    if (!icon.classList.contains("loved")) {
+      let currentheartCount = parseInt(heartCount.innerText);
+      let newheartCount = currentheartCount + 1;
+      heartCount.innerText = newheartCount;
+      icon.classList.add("loved");
+    } else {
+      let currentheartCount = parseInt(heartCount.innerText);
+      let newheartCount = currentheartCount - 1;
+      heartCount.innerText = newheartCount;
+      icon.classList.remove("loved");
+    }
   });
 });
 
@@ -52,6 +60,7 @@ callButton.forEach((btn) => {
   });
 });
 
+// Clear Button Section
 clearBtn = document.getElementsByClassName("call-history-clearbtn")[0];
 clearBtn.addEventListener("click", function () {
   let logEach = document.querySelectorAll(".call-log-each");
